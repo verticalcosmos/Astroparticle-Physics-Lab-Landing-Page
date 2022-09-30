@@ -21,7 +21,7 @@ The page is responsive.
 
 ## Usage:
 
-The page is usable across modern browesers.
+The page is usable across modern browsers.
 
 
 ## Dependancies:
