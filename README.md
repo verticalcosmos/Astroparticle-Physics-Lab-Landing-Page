@@ -28,3 +28,4 @@ The page is usable across modern browsers.
 Styles.css
 JavaScript.js
 AboutIllus.jpg
+Starts.png
