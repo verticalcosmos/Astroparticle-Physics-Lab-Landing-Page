@@ -6,6 +6,7 @@
 
   --c-grey-light: #999;
   --c-white: #eee;
+  --c-Purewhite: #ffffff;
   --c-hover-link: #ada6ef;
 
   /* FONTS */
@@ -96,12 +97,13 @@ section {
   display: inline-block;
   color: var(--c-white);
   text-decoration: none;
-  transition: all 0.4s;
+  transition: all 0.5s;
+  opacity: 0.5;
 }
 
 .navigation__link:hover {
-  color: var(--c-hover-link);
-  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--c-Purewhite);
+  opacity: 1;
 }
 
 .heading--primary {
