@@ -147,23 +147,28 @@ section {
       transparent 30%
     ),
     radial-gradient(ellipse at 60% 40%, #a134b7a6 -10%, transparent 30%);
-  animation: infRotate 180s linear infinite forwards;
+  animation: infRotate 50s linear infinite forwards;
 }
 
 @keyframes infRotate {
   0% {
-    transform: rotate(0deg) translate(0rem, 0rem) rotate3d(1, 1, 1, 0deg)
-      scale(0);
+    transform: rotate(-20deg) translate(0rem, 0rem) 
+      scale(1, 1);
   }
 
-  50% {
-    transform: rotate(360deg) translate(2rem, 2rem) rotate3d(1, 1, 1, 180deg)
-      scale(1.1);
+  33% {
+    transform: rotate(-35deg) translate(2rem, 2rem) 
+      scale(0.8, 0.8);
+  }
+
+  66% {
+    transform: rotate(-5deg) translate(2rem, 2rem) 
+      scale(0.8, 0.8);
   }
 
   100% {
-    transform: rotate(360deg) translate(0rem, 0rem) rotate3d(1, 1, 1, 360deg)
-      scale(0);
+    transform: rotate(-20deg) translate(0rem, 0rem) 
+      scale(1, 1);
   }
 }
 
@@ -210,7 +215,7 @@ section {
   transform: rotate(0deg);
 
   background-image: radial-gradient(
-    ellipse at 40% 60%,
+    ellipse at 50% 50%,
     #344ab7a6 10%,
     transparent 30%
   );
@@ -218,9 +223,8 @@ section {
 
 .project:hover::before {
   opacity: 1;
-  transform: rotate(15deg);
   background-image: radial-gradient(
-    ellipse at 40% 60%,
+    ellipse at 50% 50%,
     #344ab7a6 10%,
     transparent 30%
   );
