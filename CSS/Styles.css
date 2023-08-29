@@ -146,13 +146,13 @@ section {
       #344ab7a6 -10%,
       transparent 30%
     ),
-    radial-gradient(ellipse at 60% 40%, #a134b7a6 -10%, transparent 30%);
-  animation: infRotate 50s linear infinite forwards;
+    radial-gradient(ellipse at 60% 40%, #29a6afa6 -10%, transparent 30%);
+  animation: infRotate 50s linear infinite alternate-reverse;
 }
 
 @keyframes infRotate {
   0% {
-    transform: rotate(-20deg) translate(0rem, 0rem) scale(1, 1);
+    transform: rotate(-20deg) translate(0rem, 0rem) scale(0.6, 0.6);
   }
 
   33% {
@@ -160,17 +160,17 @@ section {
   }
 
   66% {
-    transform: rotate(-5deg) translate(2rem, 2rem) scale(0.8, 0.8);
+    transform: rotate(-5deg) translate(2rem, 2rem) scale(0.6, 0.6);
   }
 
   100% {
-    transform: rotate(-20deg) translate(0rem, 0rem) scale(1, 1);
+    transform: rotate(-20deg) translate(0rem, 0rem) scale(0.8, 0.8);
   }
 }
 
 .header__img {
-  stroke: #63a0fd;
-  stroke-width: 1.2px;
+  stroke: #ffffff;
+  stroke-width: 0.7px;
   z-index: -1;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -184,19 +184,19 @@ section {
 
 .primary-orbit {
   opacity: 0.6;
-  filter: drop-shadow(0px 0px 5px #63a0fd);
 }
 
 .nucleus {
   opacity: 0.6;
-  filter: drop-shadow(0px 0px 10px #63a0fd);
+  filter: drop-shadow(0px 0px 4px #ffffff);
 }
 
 .electron {
-  fill: #63a0fd;
+  fill: #ffffff;
   /* fill: #4570af; */
   stroke: none;
   filter: none;
+  opacity: 0.5;
 }
 
 .electron1 {
