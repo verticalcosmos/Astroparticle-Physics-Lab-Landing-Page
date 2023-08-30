@@ -189,6 +189,7 @@ section {
 }
 
 .header__img {
+  height: calc(100vh - 11rem);
   stroke: #8cb5e4;
   stroke-width: 0.7px;
   z-index: -1;
