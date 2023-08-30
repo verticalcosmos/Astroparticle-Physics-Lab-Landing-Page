@@ -7,7 +7,7 @@
   --c-grey-light: #999;
   --c-white: #eee;
   --c-Purewhite: #ffffff;
-  --c-hover-link: #ada6ef;
+  --c-hover-link: #ffffff;
 
   /* FONTS */
   --f-xs: 1.2rem;
@@ -22,6 +22,26 @@
   --f-display: 'tachyon', sans-serif;
   --f-body: 'quasimoda', sans-serif;
 }
+
+
+
+/*Scrollbar change */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #181c25;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background: #415a80;
+} 
+
+
 
 html {
   font-size: 62.5%;
