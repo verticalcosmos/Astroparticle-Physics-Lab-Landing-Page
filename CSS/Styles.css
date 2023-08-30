@@ -1,6 +1,6 @@
 :root {
   /* COLORS */
-  --c-bg: #181d23;
+  --c-bg: #010107;
   --c-bg-footer: #0e1114;
   --c-footer: rgba(255, 255, 255, 0.5);
 
@@ -19,8 +19,8 @@
   --f-3xl: 4rem;
   --f-4xl: 8rem;
 
-  --f-display: 'Orbitron', sans-serif;
-  --f-body: 'Montserrat', sans-serif;
+  --f-display: 'tachyon', sans-serif;
+  --f-body: 'quasimoda', sans-serif;
 }
 
 html {
@@ -44,9 +44,9 @@ body {
   box-sizing: border-box;
   color: var(--c-white);
   background-color: var(--c-bg);
-  background-image: url(../Images/Stars.png);
-  background-repeat: repeat-y;
-  background-size: cover;
+  background-image: url(../Images/WaveandParticle.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 
 section {
@@ -144,7 +144,7 @@ section {
   background-image: radial-gradient(
       ellipse at 40% 60%,
       #344ab7a6 -10%,
-      transparent 30%
+      transparent 50%
     ),
     radial-gradient(ellipse at 60% 40%, #29a6afa6 -10%, transparent 30%);
   animation: infRotate 50s linear infinite alternate-reverse;
@@ -169,7 +169,7 @@ section {
 }
 
 .header__img {
-  stroke: #ffffff;
+  stroke: #8cb5e4;
   stroke-width: 0.7px;
   z-index: -1;
   position: absolute;
@@ -179,24 +179,24 @@ section {
 }
 
 .secondary-orbits {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .primary-orbit {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .nucleus {
-  opacity: 0.6;
-  filter: drop-shadow(0px 0px 4px #ffffff);
+  opacity: 1;
+  filter: drop-shadow(0px 0px 4px #8cb5e4);
 }
 
 .electron {
-  fill: #ffffff;
+  fill: #8cb5e4;
   /* fill: #4570af; */
   stroke: none;
   filter: none;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .electron1 {
@@ -235,7 +235,8 @@ section {
 }
 
 .header__text {
-  max-width: 40rem;
+  max-width: 55rem;
+  text-align: justify;
 }
 
 .section__research {
