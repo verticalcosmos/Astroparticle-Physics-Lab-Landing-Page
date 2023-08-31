@@ -184,7 +184,7 @@ section {
   height: calc(100vh - 11rem);
   stroke: #8cb5e4;
   stroke-width: 0.7px;
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -273,11 +273,74 @@ section {
   transition: opacity 1s ease-in-out;
 }
 
+.blob {
+  background: #65a4ec;
+  filter: blur(20px);
+  height: 100px;
+  width: 350px;
+  border-radius: 30% 50% 20% 40%;
+  animation: transform 8s ease-in-out infinite both alternate,
+    movement_one 10s ease-in-out infinite both;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 4rem;
+  z-index: -1;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes transform {
+  0%,
+  100% {
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+  }
+  20% {
+    border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
+  }
+  40% {
+    border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
+  }
+  60% {
+    border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
+  }
+  80% {
+    border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
+  }
+}
+
+@keyframes movement_one {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: translate(10%, 20%) rotateY(10deg) scale(1.2);
+  }
+}
+
+.project__bg {
+  opacity: 0;
+  filter: blur(20px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  transition: opacity 2s ease-in-out;
+}
+
 .project:hover {
   opacity: 1;
 }
 
-.project::before {
+.project:hover .blob {
+  opacity: 0.3;
+}
+
+@keyframes move {
+}
+
+/* .project::before {
   content: '';
   z-index: -1;
   position: absolute;
@@ -300,7 +363,7 @@ section {
     #344ab7a6 10%,
     transparent 30%
   );
-}
+} */
 
 .section__publications {
   display: grid;
