@@ -23,8 +23,6 @@
   --f-body: 'quasimoda', sans-serif;
 }
 
-
-
 /*Scrollbar change */
 
 ::-webkit-scrollbar {
@@ -39,9 +37,7 @@
 ::-webkit-scrollbar-thumb {
   border-radius: 0px;
   background: #415a80;
-} 
-
-
+}
 
 html {
   font-size: 62.5%;
@@ -64,9 +60,9 @@ body {
   box-sizing: border-box;
   color: var(--c-white);
   background-color: var(--c-bg);
-  background-image: url(../Images/WaveandParticle.png);
-  background-repeat: no-repeat;
-  background-size: 100vw;
+  background-image: url(../Images/Stars.png);
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 section {
@@ -144,6 +140,9 @@ section {
 }
 
 .header {
+  background-image: url(../Images/WaveandParticle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 10%;
   /* background-image: url(../Images/AboutIllus.png);
   background-size: 70dvh;
@@ -192,7 +191,7 @@ section {
   height: calc(100vh - 11rem);
   stroke: #8cb5e4;
   stroke-width: 0.7px;
-  z-index: -1;
+  z-index: 1;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -253,11 +252,13 @@ section {
 
 .header__title {
   justify-self: end;
+  z-index: 10;
 }
 
 .header__text {
   max-width: 55rem;
   text-align: justify;
+  z-index: 10;
 }
 
 .section__research {
