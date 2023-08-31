@@ -60,9 +60,9 @@ body {
   box-sizing: border-box;
   color: var(--c-white);
   background-color: var(--c-bg);
-  background-image: url(../Images/Stars.png);
-  background-repeat: repeat;
-  background-size: contain;
+  background-image: url(../Images/WaveandParticle.png), url(../Images/Stars.png);
+  background-repeat: no-repeat, repeat;
+  background-size: contain, contain;
 }
 
 section {
@@ -140,14 +140,7 @@ section {
 }
 
 .header {
-  background-image: url(../Images/WaveandParticle.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 10%;
-  /* background-image: url(../Images/AboutIllus.png);
-  background-size: 70dvh;
-  background-repeat: no-repeat;
-  background-position: center; */
   height: 100dvh;
   position: relative;
 
@@ -252,13 +245,11 @@ section {
 
 .header__title {
   justify-self: end;
-  z-index: 10;
 }
 
 .header__text {
   max-width: 55rem;
   text-align: justify;
-  z-index: 10;
 }
 
 .section__research {
