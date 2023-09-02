@@ -13,7 +13,7 @@ function shrinkNav(entries) {
 }
 
 const observer = new IntersectionObserver(shrinkNav, {
-  threshold: 0,
+  threshold: 0.8,
 });
 
 observer.observe(header);

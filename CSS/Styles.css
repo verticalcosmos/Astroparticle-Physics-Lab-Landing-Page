@@ -91,8 +91,9 @@ section {
   left: 0;
   top: 0;
   z-index: 10;
-  background-color: rgba(24, 29, 35, 0.3);
-  backdrop-filter: blur(5px);
+  /* background-color: rgba(24, 29, 35, 0.3); */
+  background-color: var(--c-bg);
+  /* backdrop-filter: blur(5px); */
 
   display: flex;
   align-items: center;
@@ -274,22 +275,61 @@ section {
 }
 
 .blob {
-  background: #65a4ec;
-  filter: blur(20px);
-  height: 100px;
-  width: 350px;
-  border-radius: 30% 50% 20% 40%;
-  animation: transform 8s ease-in-out infinite both alternate,
-    movement_one 10s ease-in-out infinite both;
+  filter: blur(15px);
   opacity: 0;
   position: absolute;
-  left: 0;
+  left: 1rem;
   top: 4rem;
   z-index: -1;
   transition: opacity 1s ease-in-out;
 }
 
-@keyframes transform {
+.blob1 {
+  border-radius: 30% 50% 20% 40%;
+  height: 100px;
+  width: 350px;
+  background-image: linear-gradient(to left, #65a4ec, #8443e7);
+  animation: transform1 8s ease-in-out infinite both alternate,
+    move1 10s ease-in-out infinite both;
+}
+
+.blob2 {
+  border-radius: 30% 50% 20% 40%;
+  height: 50px;
+  width: 350px;
+  background-image: linear-gradient(to right, #65a4ec, #8443e7);
+  animation: transform1 8s ease-in-out infinite both alternate,
+    move1 10s ease-in-out infinite both;
+}
+
+.blob3 {
+  border-radius: 30% 50% 20% 40%;
+  height: 80px;
+  width: 300px;
+  background-image: linear-gradient(to right, #65a4ec, #e743dc);
+  animation: transform1 8s ease-in-out infinite both alternate,
+    move1 10s ease-in-out infinite both;
+}
+
+.blob4 {
+  border-radius: 30% 50% 20% 40%;
+  height: 80px;
+  width: 300px;
+  background-image: linear-gradient(to right, #ec6565, #4c53e3);
+  animation: transform1 8s ease-in-out infinite both alternate,
+    move1 10s ease-in-out infinite both;
+}
+
+.blob5 {
+  border-radius: 30% 50% 20% 40%;
+  height: 50px;
+  width: 300px;
+  background-image: linear-gradient(to right, #981096, #6d75ff);
+  animation: transform1 8s ease-in-out infinite both alternate,
+    move1 10s ease-in-out infinite both;
+}
+
+@keyframes transform1 {
   0%,
   100% {
     border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
@@ -308,7 +348,7 @@ section {
   }
 }
 
-@keyframes movement_one {
+@keyframes move1 {
   0%,
   100% {
     transform: none;
@@ -335,9 +375,6 @@ section {
 
 .project:hover .blob {
   opacity: 0.3;
-}
-
-@keyframes move {
 }
 
 /* .project::before {
