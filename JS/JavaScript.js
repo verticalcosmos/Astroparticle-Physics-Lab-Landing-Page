@@ -6,8 +6,10 @@ function shrinkNav(entries) {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       nav.style.fontSize = 'var(--f-md)';
+      nav.style.backgroundColor = 'var(--c-bg)';
     } else {
       nav.style.removeProperty('font-size');
+      nav.style.removeProperty('background-color');
     }
   });
 }
